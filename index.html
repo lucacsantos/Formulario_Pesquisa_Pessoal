@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Formulário de pesquisa pessoal</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Começo</h1>
+        <p id="description" class="description text-center">Obrigado
+            por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+        </header>
+        <form >
+            <div class="form-group">
+                <label  for="name">Nome</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Insira seu nome" required> 
+            </div>
+
+            <div class="form-group">
+                 <label  for="email">Email</label>
+                 <input type="email" name="email" id="email" class="form-control"
+                  placeholder=" Insira seu email" required>
+            </div>
+            
+            <div class="form-group">
+                <label  for="number">Idade<span class="clue">(opcional)</label></span>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder=" Insira sua idade">
+           </div>
+
+           <div class="form-group">
+               <p for="ocupacao">Qual opção descreve melhor sua função atual?</p>
+               <select id="dropdown" name="role" class="form-control" required>
+                   <option disabled selected value>Selecionar a opção</option>
+                   <option value="student">Estudante</option>
+                   <option value="job">Trabalho em tempo integral</option>
+                   <option value="learner">Aprendiz em tempo integral</option>
+                   <option value="preferNo">Prefiro não dizer</option>
+                   <option value="other">Outro</option>
+               </select>               
+           </div>
+           <div class="form-group">
+               <p>Você recomendaria o formulario de cadastro a um amigo?</p>
+               <label>
+                   <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked>
+                   Sim
+               </label>
+               <label>
+                   <input type="radio" name="user-recommend" value="maybe" class="input-radio" checked>
+                   Talvez
+               </label>
+               <label>
+                   <input type="radio" name="user-recommend" value="not-sure" class="input-radio" checked>
+                   Não
+               </label>
+           </div>
+
+           <div class="form-group">
+               <p>Algum comentario?</p>
+               <textarea
+               
+               class="input-textarea"
+               name="comment"
+               placeholder="Digite seu comentario..."
+             ></textarea>
+           </div>
+
+           <div class="form-group">
+               <button type="submit" id="submit" class="submit-button">Enviar</button>
+           </div>
+        </form>
+    </div>
+</body>
+</html>
